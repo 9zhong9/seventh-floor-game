@@ -1,0 +1,10 @@
+{
+  "name": "第七码楼",
+  "short_name": "第七码楼",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#090a10",
+  "theme_color": "#090a10",
+  "description": "手机网页文字恐怖闯关游戏",
+  "lang": "zh-CN"
+}

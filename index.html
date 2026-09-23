@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#090a10" />
+  <meta name="description" content="第七码楼：手机网页文字恐怖闯关游戏" />
+  <link rel="manifest" href="manifest.json" />
+  <link rel="stylesheet" href="style.css" />
+  <title>第七码楼</title>
+</head>
+<body>
+  <main class="app">
+    <header class="hero">
+      <p class="eyebrow">MOBILE TEXT HORROR</p>
+      <h1>第七码楼</h1>
+      <p class="tagline">只有清扫完每一层，电梯才会继续向上。</p>
+    </header>
+
+    <section class="warning" aria-label="内容警告">
+      <strong>内容警告</strong>
+      <p>本作含虚构的血腥、死亡、暴力与心理恐怖内容。主要角色均为明确成年的虚构人物；不含露骨色情描写。</p>
+    </section>
+
+    <section class="status" aria-label="状态">
+      <div><span>生命</span><b id="hp">5</b></div>
+      <div><span>精神</span><b id="sanity">5</b></div>
+      <div><span>线索</span><b id="clues">0</b></div>
+      <div><span>血痕</span><b id="blood">0</b></div>
+    </section>
+
+    <section class="card" aria-live="polite">
+      <p class="floor" id="floor"></p>
+      <h2 id="title"></h2>
+      <p class="character" id="character"></p>
+      <div class="story" id="story"></div>
+      <div class="choices" id="choices"></div>
+    </section>
+
+    <p class="notice" id="notice">存档保存在当前浏览器中。</p>
+    <nav class="actions" aria-label="游戏操作">
+      <button id="save">保存</button>
+      <button id="load">读取</button>
+      <button id="restart">重开</button>
+    </nav>
+    <footer>第七码楼 · 一个适合手机浏览器的文字游戏原型</footer>
+  </main>
+  <script src="game.js"></script>
+</body>
+</html>
